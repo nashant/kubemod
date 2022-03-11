@@ -53,5 +53,5 @@ jobs:
           tags: nashant/kubemod:${{ env.RELEASE_VERSION}}
 
       - name: Codecov
-        if: ${{ env.RELEASE_VERSION == "latest" }}
+        if: ${{ env.RELEASE_VERSION == 'latest' }}
         run: bash <(curl -s https://codecov.io/bash)
