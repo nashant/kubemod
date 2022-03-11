@@ -51,7 +51,7 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: kubemod/kubemod:${{ env.RELEASE_VERSION}}
+          tags: nashant/kubemod:${{ env.RELEASE_VERSION}}
 
       - name: Codecov
         if: ${{ env.RELEASE_VERSION == "latest" }}
